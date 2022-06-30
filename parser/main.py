@@ -85,7 +85,7 @@ def get_data():
         product_fullprice = product.get('fullPrice')
         product_discount = product.get('discount')
         product_finalprice = product.get('finalPrice')
-        products.append({'id': product_id, 'title': product_title, 'url': product_url, 'fullPrice': product_fullprice, 'discount': product_discount, 'finalPrice': product_finalprice})
+        products.append({'id': product_id, 'title': product_title, 'url': 'aliexpress.com'+product_url, 'fullPrice': product_fullprice, 'discount': product_discount, 'finalPrice': product_finalprice})
 
 
     with open('products.json', 'w') as file:
